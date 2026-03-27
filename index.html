@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gin</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="logo">Gin</div>
+        <nav>
+            <ul>
+                <a href="index.html">Home</a>
+                <a href="html/products.html">All Products</a>
+                <a href="html/women.html">Women</a>
+                <a href="html/men.html">Men</a>
+            </ul>
+        </nav>
+        <div class="cart">
+            <button id="cart-btn">
+                <i class="fas fa-shopping-cart"></i>
+                <span id="cart-count">0</span>
+            </button>
+            <a href="#">Log In</a>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content fade-in">
+            <h1>Timeless Fashion</h1>
+            <p>Discover your style with Gin!</p>
+            <button id="Call-To-Action">
+                <a href="products.html">Shop Now!</a>
+            </button>
+        </div>
+    </section>
+
+    <section class="best-sellers">
+        <div class="best-sellers-content fade-in">
+            <h4>Best Sellers</h4>
+            <p>Explore Gin's most popular clothing in both men and women</p>
+        </div>
+        <div class="best-sellers-column">
+            <div class="column1 fade-in">
+                <a href="women.html">Shop Women</a>
+            </div>
+            <div class="column2 fade-in">
+                <a href="men.html">Shop Men</a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <section class="upper-footer">
+            <div class="footer-links">
+                <h4>Legal</h4>
+                <a href="#">Terms and Conditions</a>
+                <a href="#">Shipping Policy</a>
+                <a href="#">Refund Policy</a>
+            </div>
+            <div class="social-links">
+                <h4>Follow Us</h4>
+                <div>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-tiktok"></i></a>
+                </div>
+            </div>
+        </section>
+        <section class="lower-footer">
+            <h3>Subscribe to our Newsletter</h3>
+            <p>Early access from Gin straight to your inbox!</p>
+            <label>Email Address <span>*</span></label>
+            <input type="email" required placeholder="Enter your email:">
+            <div class="checkbox-container">
+                <input type="checkbox" id="marketing">
+                <label for="marketing">I agree to receiving marketing emails</label>
+            </div>
+            <button id="join-btn">Join Now</button>
+        </section>
+        <p class="copyright">© 2025 Gin. All rights reserved.</p>
+    </footer>
+
+    <div id="cart-sidebar">
+        <div class="cart-header">
+            <h2>Your Cart</h2>
+            <button id="close-btn">X</button>
+        </div>
+        <div id="cart-items">
+            <p class="cart-empty">Your Cart is Empty.</p>
+        </div>
+        <div class="cart-footer-sidebar">
+            <span>Total: <span id="cart-total">$0.00</span></span>
+            <button id="checkout-btn">Checkout</button>
+        </div>
+    </div>
+
+    <div id="overlay"></div>
+    <script src="js/app.js"></script>
+</body>
